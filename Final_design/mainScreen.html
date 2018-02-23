@@ -1,0 +1,89 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+    <head >
+            <style>
+                    .grid-container {
+                      display: grid;
+                      top: 450px;                       
+                      grid-row-gap: 50px;
+                      grid-column-gap: 50px;
+                      grid-template-columns: auto auto auto;
+                      padding: 10px;
+                    }
+                    .grid-item {
+                      background-color:black; 
+                      border: 1px solid rgba(0, 0, 0, 0.8);
+                      height: 200px;
+                      width: 200px;
+                    
+                    }
+                    .icons {
+                        padding: 0; 
+                        width:100%;
+                        height: 100%;
+                    }
+                    #clock{
+                        font-size: 75px;
+                    }
+                    #Date{
+                        font-size: 35px;
+                    }
+                    #datetime{
+                        right: 100px;
+                    }
+                
+            </style>
+            
+            
+            <script>
+                    function startTime() {
+                        var today = new Date();
+                        var h = today.getHours();
+                        var m = today.getMinutes();
+                        m = checkTime(m);
+                       
+                        document.getElementById('clock').innerHTML = h + ":" + m ;
+                        
+                        var dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+                        var dateNames = ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th","12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd","23rd", "25th", "26th", "27th", "28th", "29th", "30th", "31st"];                       
+                        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; 
+                        
+                        document.getElementById('Date').innerHTML = dayNames[today.getDay()] + " " + dateNames[today.getDate()]+ " " + monthNames[today.getMonth()];
+                        var t = setTimeout(startTime, 500);
+
+                    }
+                    function checkTime(i) {
+                        if (i < 10) {i = "0" + i};  
+                        return i;
+                    }
+                   
+                    
+            </script>
+           
+
+    </head>
+
+
+
+    <body bgcolor="#000000" onload="startTime()">
+        
+            <div id="datetime" class="w3-display-topmiddle" style="color: white" >
+                <h1 id="clock"></h1>
+                <h2 id="Date"></h2> 
+            </div>
+
+            <div class="grid-container w3-display-middle">
+                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/FB.PNG?raw=true"></img></button>
+                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/TW.PNG?raw=true"></img></button>
+                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/SET.PNG?raw=true"></img></button>
+                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/INST.PNG?raw=true"></img></button>
+                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/WU.PNG?raw=true"></img></button>
+                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/MUTE.PNG?raw=true"></img></button>
+            </div>
+
+
+
+    </body>
+</html>

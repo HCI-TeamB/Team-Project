@@ -1,0 +1,66 @@
+Test subject #1(25-40yo female)
+	- clicks to select radio function
+	- could make notification clearer 
+	- does not use social media while driving 
+	- likes the UI though
+
+Test subject #2(18-25yo female)
+	- connects phone - ok
+	- clicks on notification - ok
+	- suggests option to mute 
+	- interacts well with UI 
+	- timer for photos - ok
+	- interested to use the radio 
+	- does not use social media much while driving, other than for messaging
+ 
+Test subject #3(18-25yo female)
+	- likes the UI
+	- says it's self-explanatory 
+	- understands step by step our prototype 
+	- suggests brighter colour scheme
+	- would not use social media while driving, but likes the idea
+
+Test subject #4(18-25yo male)
+	- understands set-up options (connects phone, selects FB logo) 
+	- self-explanatory design
+	- controls UI well
+	- doesnt use  instagram 
+	- doesn't use photos on social media
+ 	- 4-5s photo timer is a good idea 
+	- how to backtrack through screens
+	- suggests swiping between notifications 
+
+Test subject #5(18-25yo male)
+	- doesnt use social media in car 
+	- confused by the UI  
+	- likes the functionality of the design 
+	- would wanna restric use for only when car is stationary
+
+Test subject #6(25-40yo female)
+	- does like to idea, uses social media a lot while driving 
+	- navigating through screens easy 
+	- more color suggested
+	- likes the UI 
+	- self-explanatory design 
+	
+Test subject #7(25-40yo male)
+	- understands design step by step 
+	- suggests applying swiping to go from screen to screen 
+	- does not like the idea of social media on the road, does not think it's safe
+Test subject #8(18-25yo female)
+	- wants to use the radio
+	- does understand UI quickly
+	- likes the UI
+	- suggests mute button for notifications 
+Test subject #9(18-25yo male)
+	- set-up understood
+	- likes the idea and understands imporatance of implementing social media
+	- uses social media while driving 
+	- likes the screens
+	- asks how to navigate through screens
+	
+Test subject #10(18-25yo female) 
+	- contols UI intuitively
+	- likes the design
+	- suggests applying mute button and more color
+	- suggest naming the system 
