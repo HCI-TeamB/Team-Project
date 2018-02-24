@@ -64,24 +64,45 @@
 
             <div id="buttons" class="grid-container w3-display-middle">
                 <button id="FB" onclick="FB()" class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/FB.PNG?raw=true"></img></button>
-                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/TW.PNG?raw=true"></img></button>
+                <button id="TW" onclick="TW()" class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/TW.PNG?raw=true"></img></button>
                 <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/SET.PNG?raw=true"></img></button>
-                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/INST.PNG?raw=true"></img></button>
-                <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/WU.PNG?raw=true"></img></button>
+                <button id="INST" onclick="INST()"class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/INST.PNG?raw=true"></img></button>
+                <button id="WU" onclick="WU()"class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/WU.PNG?raw=true"></img></button>
                 <button class="grid-item"><img class="icons" src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/MUTE.PNG?raw=true"></img></button>
             </div>
         </div>
 
         <div id="FB0"  style="display:none; color: white">
-            <button onclick="main()" id="return"> x  </button> 
+            <button onclick="main()" class="return"> x  </button> 
             <div class="w3-display-middle">
                 <img id="logo"src="https://cdn3.iconfinder.com/data/icons/happily-colored-snlogo/512/facebook.png">
                 <h1 >You have no new Notifications!</h1>
             </div>
         </div>
 
-            
-            
+        <div id="TW0"  style="display:none; color: white">
+                <button onclick="main()" class="return"> x  </button> 
+                <div class="w3-display-middle">
+                    <img id="logo"src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/TW.PNG?raw=true">
+                    <h1 >You have no new Notifications!</h1>
+                </div>
+        </div>
+        
+        <div id="WU0"  style="display:none; color: white">
+                <button onclick="main()" class="return"> x  </button> 
+                <div class="w3-display-middle">
+                    <img id="logo"src="https://github.com/jerry-MScIT-2017/HCI_images/blob/master/WU.PNG?raw=true">
+                    <h1 >You have no new Notifications!</h1>
+                </div>
+        </div>
+        
+        <div id="INST0"  style="display:none; color: white">
+                <button onclick="main()" class="return"> x  </button> 
+                <div class="w3-display-middle">
+                    <img id="logo"src="https://seeklogo.com/images/I/instagram-new-2016-logo-4773FE3F99-seeklogo.com.png">
+                    <h1 >You have no new Notifications!</h1>
+                </div>
+        </div>
 
 
 
@@ -117,9 +138,33 @@
                     });
                    
                     $(document).ready(function(){
-                    $('#return').click(function(){
+                    $('#TW').click(function(){
+                        $('#main').hide();
+                        $('#TW0').show();
+                        });
+                    });
+
+                    $(document).ready(function(){
+                    $('#INST').click(function(){
+                        $('#main').hide();
+                        $('#INST0').show();
+                        });
+                    });
+
+                    $(document).ready(function(){
+                    $('#WU').click(function(){
+                        $('#main').hide();
+                        $('#WU0').show();
+                        });
+                    });
+
+                    $(document).ready(function(){
+                    $('.return').click(function(){
                         $('#main').show();
                         $('#FB0').hide();
+                        $('#TW0').hide();
+                        $('#WU0').hide();
+                        $('#INST0').hide();
                         });
                     });
 
@@ -132,8 +177,17 @@
                     function FB(){
                         document.bgColor= '#3b5998';
                     }
-                   
                     
+                    function TW(){
+                        document.bgColor= '#55acee';
+                    }
+                   
+                    function WU(){
+                        document.bgColor= '#4dc247';
+                    }
+                    function INST(){
+                        document.bgColor= '#e95950';
+                    }
             </script>
     </body>
 </html>
